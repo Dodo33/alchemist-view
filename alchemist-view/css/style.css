@@ -1,0 +1,378 @@
+body{
+    background-color:rgba(181,181,183, 0.33);
+    font-size:14px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+
+}
+
+
+
+/*
+LOGIN - index.php
+*/
+
+.center_form_container{
+	display: inline-flex;  
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.form_container{
+	margin: auto; 
+	width: 33%;
+	
+}
+
+.form_title{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 8px 0 8px 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #FFA500;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_title img{
+	height: 75px;
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login_form{
+	text-align: center;
+	width: 100%;
+	border-top: 2px solid rgba(51, 102, 153);
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.login_form label{
+	font-size: 14px;
+}
+
+.login_form button{
+    background-color: rgba(51, 102, 153, 0.60);
+    color: black;
+    border-radius: 30px;
+    width: 20%;
+    font-size: 18px;
+    border:0;
+}
+
+.login_form input{
+    width: 60%;
+    background-color: rgba(181,181,183, 0.5);
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 16px;
+}
+
+.login_form button:hover{
+    background-color: rgba(51, 102, 153, 0.85);
+}
+
+#error_msg{
+    position: absolute;
+    width: 100%;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    bottom: 15%; 
+}
+
+
+
+/*
+FOOTER - footer.html
+*/
+
+.footer{
+    color:#fff; 
+    display:block;
+    position:fixed;
+    height:25px;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(51, 102, 153, 0.70);
+    border-top: 1px solid black;
+    text-align: center;
+    line-height: 25px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.footer i{
+	font-size:24px;
+}
+
+
+
+/*
+LEFT PANEL - left_panel.php
+*/
+
+.left{
+    display:block;
+    width:15%;
+    position:fixed;
+    overflow:auto;
+    bottom:25px;
+    top:0px;
+    background-color:rgba(2, 72, 89, 0.8);
+}
+
+.left_panel_title{
+    background-color: #FFA500;
+    height: 50px;
+    text-align: center;
+    cursor: context-menu;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 50px;
+    background-color: 
+}
+
+.left_panel_title img{
+    height: 50px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu_left_panel ul{
+    padding:0px;
+    list-style:none;
+    border-collapse:separate;
+    width: 100%;
+}
+
+.menu_left_panel li{
+    border:solid 0px #000;
+    width: 100%;
+}
+
+.menu_left_panel a {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+    padding-left: 15px;
+    text-decoration: none;
+    display: block; 
+    width: 100%; 
+    height: 100%;
+}
+
+.menu_left_panel a:hover{
+    background-color: rgb(51, 102, 153);
+    border-left: 4px solid #FFA500;
+    border-right: 1px solid black;
+}
+
+
+
+/*
+DASHBOARD & TS - dashboard.php & ts.php
+*/
+
+/* Main container */
+
+.main{
+    margin-left:15%;    
+    position:fixed;
+    overflow:auto;
+    top:0px;
+    left:0;
+    right:0;
+    bottom: 25px;
+}
+
+/* Header bar and title */
+
+.header{
+    background: rgba(51, 102, 153, 0.7);
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.header img{
+    width: 200px;
+    height: 50px;
+}
+
+.header a{
+    float: right;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Tables */
+
+.last_orders table tr:nth-child(even),
+.details_visualizer .center_table table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.last_orders table tr:hover,
+.details_visualizer .center_table table tr:hover {
+    background-color: #ddd;
+}
+
+.last_orders table,
+.details_visualizer .center_table table{
+    border-spacing: 5px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+
+
+/*
+DASHBOARD - dashboard.php
+*/
+
+/*containers*/
+
+.main_container{
+    margin: 15px;
+    clear: both;
+    height: 90%;
+}
+
+.main_container #total_portfolios_value{
+    background-color: #f2f2f2;
+    width: 96%;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid orange;
+    height: 30px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.main_container #span_ptfs_value{
+    font-weight: bold;
+}
+
+/* Pie chart location */
+
+.instrument_allocation{
+    margin-top: 20px;
+    height: 60%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Last orders table */
+
+.last_orders{
+    width: 96%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.last_orders table{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 2px;
+	color: black;
+    font-family: Lucida Console;
+}
+
+.last_orders table th{
+    background-color: #FFA500;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 3px;
+}
+
+.last_orders table td{
+    padding: 5px;
+    border: 1px solid #FFA500;
+}
+
+.last_orders a{
+	text-decoration: none;
+	color: black;
+}
+
+/*
+TS - ts.php
+*/
+
+.aum_visualization{
+    padding-top: 5px;
+    height: 60%;
+}
+
+.allocation_visualizer{
+    height: 40%;
+    width: 50%;
+    float:left;
+}
+
+.details_visualizer{
+    float: right;
+    width: 50%;
+    height: 40%;
+    display: table;
+}
+
+.details_visualizer .center_table{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.details_visualizer .center_table table{
+    width: 70%;
+    margin: auto;
+}
+
+.details_visualizer .center_table table td {
+    padding: 10px;
+}
+
+#label{
+    font-weight: bold;
+    border-right: 2px solid black;
+    background-color: rgb(255, 165, 0, 0.55);
+    font-family: Trebuchet MS;
+}
