@@ -11,7 +11,7 @@ Alchemist-view
 Description
 ===========
 Alchemist-view is a php/javascript application which allow to view summary charts
-of trading strategies created with alchemist-lib.
+of trading strategies created with `alchemist-lib <https://github.com/Dodo33/alchemist-lib>`_.
 
 Screenshot
 ==========
