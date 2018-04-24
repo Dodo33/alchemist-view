@@ -128,6 +128,10 @@
                     <canvas id = "inst_all"></canvas>
                 </div>
 
+                <div class = "last_order_label">
+					Last orders:
+				</div>
+
                 <div class = "last_orders">
                     <table>
                         <tr>
@@ -167,7 +171,13 @@
 									
                                 echo "<td>" . $ticker . "</td>";
                                 echo "<td>" . $row["instrument_type"] . "</td>";
-                                echo "<td>" . $row["order_type"] . "</td>";
+
+                                if($row["order_type"] == "MKT")
+									$order_type = "MARKET";
+								else
+									$order_type = $row["order_type"];
+
+								echo "<td>" . $order_type . "</td>";
                                 echo "<td>" . $row["amount"] . "</td>";
 
                                 if($row["price"] == NULL)

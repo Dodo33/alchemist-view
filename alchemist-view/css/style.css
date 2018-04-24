@@ -137,7 +137,7 @@ LEFT PANEL - left_panel.php
     display:block;
     width:15%;
     position:fixed;
-    overflow:auto;
+    overflow:hidden;
     bottom:25px;
     top:0px;
     background-color:rgba(2, 72, 89, 0.8);
@@ -334,6 +334,17 @@ DASHBOARD - dashboard.php
 	color: black;
 }
 
+.last_order_label{
+    width: 96%;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
 /*
 TS - ts.php
 */
@@ -373,6 +384,6 @@ TS - ts.php
 #label{
     font-weight: bold;
     border-right: 2px solid black;
-    background-color: rgb(255, 165, 0, 0.55);
+    background-color: rgba(255, 165, 0, 0.55);
     font-family: Trebuchet MS;
 }
