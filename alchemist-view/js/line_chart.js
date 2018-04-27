@@ -34,7 +34,7 @@ var line_options = {
         yAxes: [{
             scaleLabel:{
                 display: true,
-                labelString: "Asset under management",
+                labelString: "Assets under management",
             },
         }],
     },
