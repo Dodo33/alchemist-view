@@ -5,12 +5,12 @@ if(isset($_SESSION["hostname"]) and isset($_SESSION["username"]) and isset($_SES
 
     if ($mysqli->connect_errno) {
         $err_msg = $mysqli->connect_errno .  " - " . $mysqli->connect_error;
-    	header("Location: ../index.php?error=$err_msg");
+    	header("Location: index.php?error=$err_msg");
     	exit();
     }
 }
 else{
-    header("Location: ../index.php");
+    header("Location: index.php");
 }
 
 ?>
